@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="计算巢是阿里云开放给企业应用服务商的服务管理平台。服务商能够在计算巢上发布私有化部署服务，为其客户提供云上软件一键部署的能力；同时也支持全托管模式的服务，赋能服务商托管其客户资源。">
+  <title>DeepTutor社区版 部署文档 - Aliyun 计算巢 x Demo</title>
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  
+
+  
+
+  
+  
+
+  
+    <script src="../search/main.js"></script>
+  
+
+  
+
+  <script src="../js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <img src="./img/logo-2x.png">
+        </div>
+        <div class="nav-list">
+          <ul>
+          
+              <li><a href="#deeptutor">DeepTutor社区版 部署文档</a></li>
+              
+                  <li><a href="#_1">概述</a></li>
+                  
+              
+                  <li><a href="#_2">部署流程</a></li>
+                  
+                      <li class="li-h3"><a href="#1">1. 创建服务实例</a></li>
+                  
+                      <li class="li-h3"><a href="#2">2. 确认订单并创建</a></li>
+                  
+                      <li class="li-h3"><a href="#3">3. 等待部署完成</a></li>
+                  
+                      <li class="li-h3"><a href="#4">4. 访问服务</a></li>
+                  
+              
+                  <li><a href="#_4">官方文档</a></li>
+                  
+              
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content theme-github">
+      
+      <div class="content-inner">        
+        
+        <h1 id="deeptutor">DeepTutor社区版 部署文档</h1>
+<h2 id="_1">概述</h2>
+<p>DeepTutor社区版 是一款面向个性化学习的智能辅导工作区。通过阿里云计算巢服务，您可以快速部署 DeepTutor社区版，实现开箱即用。</p>
+<h2 id="_2">部署流程</h2>
+<h3 id="1">1. 创建服务实例</h3>
+<p>访问 DeepTutor社区版 服务部署链接，按提示填写部署参数：</p>
+<p><a href="https://computenest.console.aliyun.com/service/instance/create/cn-hangzhou?type=user&amp;ServiceId=service-5b2d9ae6ee43446bb608">部署链接</a></p>
+<p><img alt="创建服务实例" src="../images/create-instance.png" /></p>
+<h3 id="2">2. 确认订单并创建</h3>
+<p>参数填写完成后可以看到对应询价明细，确认参数后点击 <strong>下一步：确认订单</strong>。确认订单完成后同意服务协议并点击 <strong>立即创建</strong> 进入部署阶段。</p>
+<h3 id="3">3. 等待部署完成</h3>
+<p>等待部署完成后进入服务实例管理，在控制台找到 DeepTutor社区版 访问链接。</p>
+<p><img alt="服务实例详情" src="../images/instance-detail.png" /></p>
+<h3 id="4">4. 访问服务</h3>
+<p>部署完成后点击web安全代理，登录 DeepTutor；登录后在 Settings → Models 中配置模型提供商即可开始使用。请注意，根据您使用功能的不同配置的模型类别也有差异。例如，如果您需要使用知识库能力，则需要配置向量模型。您至少需要配置对话大模型才能体验最基础的能力。</p>
+<p><img alt="服务页面" src="../images/service-page.png" /></p>
+<h4 id="_3">如何获取和设置百炼大模型</h4>
+<ol>
+<li>登录 <a href="https://bailian.console.aliyun.com/cn-beijing">百炼</a>，点击“应用” -&gt; “API KEY”
+<img alt="bailian-page.png" src="../images/bailian-page.png" /></li>
+<li>记录您的api key以及页面上的OpenAI compatible（即大模型访问地址）
+<img alt="bailian-apikey.png" src="../images/bailian-apikey.png" /></li>
+<li>进入DeepTutor社区版，在Settings → Models中配置百炼大模型。Settings -&gt; Models
+<img alt="设置页面" src="../images/settings.png" />
+您需要根据您使用的功能设置对应的大模型，例如对话大模型、向量模型、多模态语音大模型、多模态图像大模型等。模型列表您可以从<a href="https://bailian.console.aliyun.com/cn-beijing?tab=doc#/doc/?type=model&amp;url=2840914">模型列表</a>获取。
+<img alt="bailian-models.png" src="../images/bailian-models.png" /></li>
+<li>填写模型信息后，点击apply即可生效
+<img alt="set-model.png" src="../images/set-model.png" /></li>
+</ol>
+<h2 id="_4">官方文档</h2>
+<p>更多信息请访问官方文档：<a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a></p>
+        
+      </div>
+
+      <div class="copyrights">© 2009-2022 Aliyun.com 版权所有</div>
+    </div>
+  </div>
+  
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-07-22 03:45:42.490278+00:00
+  -->
+</body>
+</html>
